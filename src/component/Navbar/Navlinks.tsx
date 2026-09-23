@@ -7,20 +7,19 @@ import React, { ReactNode } from 'react';
 interface NavlinksProps {
     href: string
     children : ReactNode
+      onClick?: () => void;
 }
 
-const Navlinks = ({href , children}: NavlinksProps) => {
+const Navlinks = ({href , children ,onClick}: NavlinksProps) => {
 
     const pathName = usePathname()
 
     const isActive:boolean = pathName === href
 
     return (
-      <Link href={href}
+      <Link href={href }  onClick={onClick}
 
       className={`${isActive ? 'text-[#C2F800] font-semibold' : 'text-[#9CA3AF] font-semibold'}`}
-      
-      
       
       
       >
