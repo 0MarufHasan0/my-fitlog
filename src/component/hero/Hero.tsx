@@ -19,8 +19,8 @@ const Hero = () => {
           </h1>
 
           <p className="max-w-xl text-sm leading-6 text-[#9CA3AF] sm:text-base">
-            FitLog is a dark, no-nonsense gym companion: pick a lift, lock it
-            into today&apos;s plan, and watch the week&apos;s work add up.
+           FitLog is a dark, no-nonsense gym companion: pick a lift, lock it <br />
+            into today's plan, and watch the week's work add up.
           </p>
 
           <button className="btn border-0 bg-[#C2F800] px-6 text-sm font-bold text-black hover:bg-[#b5eb00]">
