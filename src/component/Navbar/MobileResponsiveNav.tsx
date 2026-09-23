@@ -35,7 +35,7 @@ const MobileResponsiveNav = ({navLinks}:MobileResponsiveNavProps) => {
             {
                 isOpen && (
 
-                    <div className="absolute left-0 top-full w-full border-t p-5 shadow-md">
+                    <div className="absolute bg-[#0C0D10] left-0 top-full w-full border-t p-5 shadow-md">
 
                         <ul className="flex  flex-col gap-2">
           {navLinks.map((link) => (
@@ -58,11 +58,7 @@ const MobileResponsiveNav = ({navLinks}:MobileResponsiveNavProps) => {
             Saved {0}
           </button>
         </div>
-
-
-
-
-                    </div>
+   </div>
                 )
             }
             
