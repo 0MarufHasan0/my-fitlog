@@ -11,7 +11,7 @@ interface LibraryCardProps {
 
 const LibraryCard = ({ library }: LibraryCardProps) => {
   return (
-  <div className="card bg-base-100 shadow-sm  border-2 border-transparent transition-all duration-300 hover:border-[#C2F800]    " >
+  <div className="card bg-[#000000] shadow-sm  border-2 border-transparent transition-all duration-300 hover:border-[#C2F800]    " >
 
 
 <Link href={"/"}>

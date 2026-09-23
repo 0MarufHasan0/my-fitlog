@@ -24,7 +24,7 @@ const MobileResponsiveNav = ({navLinks}:MobileResponsiveNavProps) => {
 
             <button onClick={()=> setOpen(!isOpen)}
                 
-                className="btn md:hidden">
+                className="btn bg-[#000000] md:hidden">
 
                 {isOpen ?   <X /> : <Dumbbell color="#C2F800" /> }
 
