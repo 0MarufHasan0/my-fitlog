@@ -1,4 +1,5 @@
 
+import LibraryDetailsCardButton from "@/component/shared/LibraryDetailsCardButton";
 import { Bookmark, CalendarCheck2 } from "lucide-react";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -125,17 +126,8 @@ const LibraryDetails = async ({ params }: LibraryDetailsProps) => {
               </div>
 
               {/* Buttons */}
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
 
-                <button className="btn w-full border-none bg-[#CCFF00] text-black hover:bg-[#b8e600] sm:w-auto">
-                  <CalendarCheck2 size={18} />
-                  Add to today&apos;s plan
-                </button>
-                <button className="btn w-full border border-gray-500 bg-[#000000] text-white hover:bg-[#4B5563] sm:w-auto">
-                <Bookmark size={18} />
-                 Save for later
-               </button>
-              </div>
+             <LibraryDetailsCardButton libraryData={libraryData}  />
 
             </div>
           </div>
