@@ -2,8 +2,10 @@
 "use client"
 
 import { Dumbbell, X } from "lucide-react";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import Navlinks from "./Navlinks";
+import Link from "next/link";
+import { LibraryContext } from "@/context/Context";
 
 interface Navprops {
   name: string;
@@ -18,6 +20,12 @@ interface MobileResponsiveNavProps {
 const MobileResponsiveNav = ({navLinks}:MobileResponsiveNavProps) => {
 
     const [isOpen , setOpen] = useState<boolean>(false)
+
+    
+        const {
+            todayPlan ,
+            saveLater
+        } = useContext(LibraryContext)
 
     return (
         <div >
@@ -50,13 +58,21 @@ const MobileResponsiveNav = ({navLinks}:MobileResponsiveNavProps) => {
         
         {/* Buttons */}
         <div className="flex flex-col gap-2">
-          <button  onClick={() => setOpen(false)} className="text-white btn">
-            Plan {0}
-          </button>
+       <Link href={'/my-plan'}>
+             
+                                <button className="btn border-0 bg-[#222630] text-white hover:bg-[#2c303a]">
+                       Plan  <div className="badge bg-[#C2F800] text-[#000000] rounded-md badge-sm">{todayPlan.length}</div>
+                       </button>             
+             </Link>
+           <Link href={'/my-plan'}>
 
-          <button  onClick={() => setOpen(false)} className="text-white btn">
-            Saved {0}
-          </button>
+
+ 
+       <button className="btn  border-0 bg-[#222630] text-white hover:bg-[#2c303a]">
+     Save  <div className="badge badge-sm rounded-md text-[#000000] bg-[#C2F800]">{saveLater.length}</div>
+       </button>
+
+          </Link>
         </div>
    </div>
                 )
