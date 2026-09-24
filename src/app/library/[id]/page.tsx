@@ -1,6 +1,12 @@
 
 import { Bookmark, CalendarCheck2 } from "lucide-react";
+import { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: `library/Details`,
+ 
+};
 
 
 interface LibraryDetailsProps {
@@ -16,6 +22,8 @@ const getData = async (id: string) => {
  return data
 
 };
+
+
 
 const LibraryDetails = async ({ params }: LibraryDetailsProps) => {
   const { id } = await params;
