@@ -11,10 +11,10 @@ interface LibraryCardProps {
 
 const LibraryCard = ({ library }: LibraryCardProps) => {
   return (
-  <div className="card bg-base-100 shadow-sm  border-2 border-transparent transition-all duration-300 hover:border-[#C2F800]    " >
+  <div className="card bg-base-100 shadow-sm  border-2 border-transparent transition-all hover:scale-105 duration-300 hover:border-[#C2F800]  active:border-[#C2F800]     " >
 
 
-<Link href={"/"}>
+<Link href={`/library/${library.id}`}>
 
   {/* Image */}
       <figure>
@@ -35,14 +35,22 @@ const LibraryCard = ({ library }: LibraryCardProps) => {
 
         {/* Muscle Groups */}
         <div className="flex flex-wrap gap-2">
-          {library.muscleGroups.map((badge) => (
+         <div className="flex gap-2">
+
+           {library.muscleGroups.map((badge) => (
             <p
               key={badge}
-              className="badge rounded-full bg-[#C2F800] px-3 py-1 text-sm font-medium text-black"
+              className="badge rounded-full bg-[#C2F800] px-3 py-2 text-sm font-medium text-black"
             >
               {badge}
             </p>
           ))}
+
+         </div>
+
+         <div>
+          {""}
+         </div>
         </div>
 
 

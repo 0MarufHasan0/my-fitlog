@@ -10,8 +10,7 @@ const Footer = () => {
           alt="Logo"
           width={20}
           height={20}
-
-          className="rotate-[-45deg]"
+         className="rotate-[-45deg]"
           
         
         />
