@@ -60,7 +60,7 @@ const MobileResponsiveNav = ({navLinks}:MobileResponsiveNavProps) => {
         <div className="flex flex-col gap-2">
        <Link href={'/my-plan'}>
              
-                                <button className="btn border-0 bg-[#222630] text-white hover:bg-[#2c303a]">
+                                <button onClick={()=>setOpen(false)} className="btn w-full border-0 bg-[#222630] text-white hover:bg-[#2c303a]">
                        Plan  <div className="badge bg-[#C2F800] text-[#000000] rounded-md badge-sm">{todayPlan.length}</div>
                        </button>             
              </Link>
@@ -68,7 +68,7 @@ const MobileResponsiveNav = ({navLinks}:MobileResponsiveNavProps) => {
 
 
  
-       <button className="btn  border-0 bg-[#222630] text-white hover:bg-[#2c303a]">
+       <button onClick={()=>setOpen(false)}  className="btn w-full border-0 bg-[#222630] text-white hover:bg-[#2c303a]">
      Save  <div className="badge badge-sm rounded-md text-[#000000] bg-[#C2F800]">{saveLater.length}</div>
        </button>
 
