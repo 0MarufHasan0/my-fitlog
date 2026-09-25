@@ -200,6 +200,7 @@ Manage Your Plan
 Track Exercises, Minutes & Calories
       ↓
 Mark Workout as Done
+```
 
 💻 Run The Project Locally
 
@@ -229,3 +230,4 @@ npm run dev	Start the development server
 npm run build	Create a production build
 npm start	Start the production server
 npm run lint	Run the linter
+
