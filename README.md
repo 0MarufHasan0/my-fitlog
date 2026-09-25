@@ -202,32 +202,115 @@ Track Exercises, Minutes & Calories
 Mark Workout as Done
 ```
 
-💻 Run The Project Locally
+## 💻 Run the Project Locally
 
-Follow the steps below to run FitLog on your local device.
+Get **FitLog** up and running on your local machine in just a few simple steps.
 
-1. Clone the Repository
+### 1. 📥 Clone the Repository
+
+Clone the project from GitHub:
+
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
+```
+
+### 2. 📂 Navigate to the Project Directory
+
+Move into the project folder:
+
+```bash
+cd your-project-folder
+```
+
+### 3. 📦 Install Dependencies
+
+Install all required project dependencies:
+
+```bash
+npm install
+```
+
+### 4. 🚀 Start the Development Server
+
+Start the local development server:
+
+```bash
+npm run dev
+```
+
+### 5. 🌐 Open FitLog
+
+Once the server starts successfully, open your browser and navigate to:
+
+<p align="center">
+  <a href="http://localhost:3000">
+    <strong>🔗 http://localhost:3000</strong>
+  </a>
+</p>
+
+---
+
+## 📦 Available Scripts
+
+| Command         | Description                              |
+| :-------------- | :--------------------------------------- |
+| `npm run dev`   | 🚀 Start the development server          |
+| `npm run build` | 🏗️ Create an optimized production build |
+| `npm start`     | ▶️ Start the production server           |
+| `npm run lint`  | 🔍 Run ESLint and check for code issues  |
+
+---
+
+## 🏗️ Build for Production
+
+To create an optimized production build, run:
+
+```bash
+npm run build
+```
+
+After the build completes successfully, start the production server:
+
+```bash
+npm start
+```
+
+Your production application will be available at:
+
+<p align="center">
+  <a href="http://localhost:3000">
+    <strong>🌐 http://localhost:3000</strong>
+  </a>
+</p>
+
+---
+
+## ⚡ Quick Start
+
+Prefer a quick setup? Run the following commands:
+
+```bash
+# Clone the repository
 git clone YOUR_GITHUB_REPOSITORY_URL
 
-2. Go to the Project Folder
+# Navigate to the project
 cd your-project-folder
 
-3. Install Dependencies
+# Install dependencies
 npm install
 
-4. Start the Development Server
+# Start the development server
 npm run dev
+```
 
-5. Open the Application
+Once the server is running, open **http://localhost:3000** in your browser.
 
-Open your browser and visit:
+<p align="center">
+  🎉 <strong>FitLog is ready to go!</strong>
+</p>
 
-http://localhost:3000
+---
 
-📦 Available Scripts
-Command	Description
-npm run dev	Start the development server
-npm run build	Create a production build
-npm start	Start the production server
-npm run lint	Run the linter
-
+<p align="center">
+  Made with ❤️ for fitness, health & healthy living
+</p>
