@@ -200,3 +200,32 @@ Manage Your Plan
 Track Exercises, Minutes & Calories
       ↓
 Mark Workout as Done
+
+💻 Run The Project Locally
+
+Follow the steps below to run FitLog on your local device.
+
+1. Clone the Repository
+git clone YOUR_GITHUB_REPOSITORY_URL
+
+2. Go to the Project Folder
+cd your-project-folder
+
+3. Install Dependencies
+npm install
+
+4. Start the Development Server
+npm run dev
+
+5. Open the Application
+
+Open your browser and visit:
+
+http://localhost:3000
+
+📦 Available Scripts
+Command	Description
+npm run dev	Start the development server
+npm run build	Create a production build
+npm start	Start the production server
+npm run lint	Run the linter
