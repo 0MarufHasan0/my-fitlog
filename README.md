@@ -17,24 +17,10 @@
 
 📸 Project Preview
 
-Add your desktop screenshot here.
-Save your screenshot as desktop.png inside a screenshots folder.
-
 <p align="center">
   <img src="./src/assets/dekstop.png" alt="FitLog Desktop Preview" width="100%">
 </p>
 
-📱 Responsive Preview
-
-You can also add your mobile screenshot here later:
-
-screenshots/
-├── desktop.png
-└── mobile.png
-
-<p align="center">
-  <img src="./screenshots/mobile.png" alt="FitLog Mobile Preview" width="350">
-</p>
 
 ✨ About The Project
 
@@ -44,9 +30,10 @@ Users can browse workout cards, open detailed exercise information, add workouts
 
 The project follows a responsive design approach so the interface works across desktop, tablet, and mobile devices.
 
-🚀 Live Demo
+🚀 Live Demo  
 
-🔗 Visit FitLog Live Demo
+<a href="https://my-fitlog-eosin.vercel.app/">🔗 Visit FitLog Live Demo</a>
+
 
 🛠️ Technologies Used
 
