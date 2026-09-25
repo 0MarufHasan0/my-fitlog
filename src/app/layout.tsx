@@ -5,6 +5,7 @@ import Navbar from "@/component/Navbar/Navbar";
 import Footer from "@/component/footer/Footer";
 import LibraryProvider from "@/context/Context";
 import { ToastContainer } from "react-toastify";
+import { link } from "fs";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -32,6 +33,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       data-theme="dark"
       className={`${osWald.className} h-full antialiased`}
+    
     >
       <body className="min-h-full flex flex-col bg-[#000000]">
 

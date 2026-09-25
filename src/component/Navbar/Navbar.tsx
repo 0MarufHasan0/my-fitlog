@@ -48,6 +48,8 @@ const Navbar = () => {
 
         {/* Desktop Buttons */}
         <div className="hidden items-center gap-2 md:flex">
+
+         
           {/* <button className="btn border-0 bg-[#222630] text-white hover:bg-[#2c303a]">
             Plan {0}
           </button>
