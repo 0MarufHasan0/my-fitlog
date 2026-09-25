@@ -211,7 +211,7 @@ Get **FitLog** up and running on your local machine in just a few simple steps.
 Clone the project from GitHub:
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/0MarufHasan0/my-fitlog/
 ```
 
 ### 2. 📂 Navigate to the Project Directory
@@ -291,7 +291,7 @@ Prefer a quick setup? Run the following commands:
 
 ```bash
 # Clone the repository
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/0MarufHasan0/my-fitlog/
 
 # Navigate to the project
 cd your-project-folder
