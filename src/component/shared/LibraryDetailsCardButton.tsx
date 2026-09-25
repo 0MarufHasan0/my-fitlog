@@ -48,6 +48,23 @@ const handleAddButton = () => {
     );
   }
 
+  if(todayPlan.length >= 5){
+      return toast.warn(
+    "You can not add maximum 5 lifts to today's plan!",
+    {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    }
+  );
+
+  }
+
 setTodayPlan([...todayPlan,libraryData])
 
 toast.success(`${libraryData.name} Successfully added Plan  `, {

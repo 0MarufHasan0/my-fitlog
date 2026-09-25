@@ -2,6 +2,7 @@
 "use client";
 
 import ButtonTogglemypla from "@/component/shared/ButtonTogglemypla";
+
 import { LibraryContext } from "@/context/Context";
 import { useContext, useState } from "react";
 
@@ -70,13 +71,21 @@ const MyPlan = () => {
 
     {/* Tab and button */}
       <div className="mt-8">
-        <ButtonTogglemypla
+    
+           <ButtonTogglemypla
           activeTab={activeTab}
           setActiveTab={setActiveTab}
         />
+
+       
+       </div>
+
+      
       </div>
 
-    </div>
+     
+
+    
   );
 };
 

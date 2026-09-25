@@ -9,14 +9,14 @@ import { toast } from "react-toastify";
 
 interface MyPlanCardProps {
   plan: TLibrary;
-  PlanOrSave: TLibrary[];
+  sortedMyplan : TLibrary []
   setPlans: React.Dispatch<React.SetStateAction<TLibrary[]>>;
 }
 
 const MyPlanCard = ({
   plan,
-  PlanOrSave,
   setPlans,
+  sortedMyplan 
 }: MyPlanCardProps) => {
 
   // Mark as Done state
@@ -24,13 +24,13 @@ const MyPlanCard = ({
 
   // Remove
   const handleRemove = () => {
-    const remove = PlanOrSave.filter(
+    const remove = sortedMyplan .filter(
       (f) => f.id !== plan.id
     );
 
     setPlans(remove);
 
-    toast.success(`${plan.name} Removed Successfully`, {
+    toast.success(`${plan.name} removes the workout`, {
       position: "top-right",
       autoClose: 3000,
       hideProgressBar: false,
@@ -45,7 +45,7 @@ const MyPlanCard = ({
   const handleMarksAsDone = () => {
     setIsMark(true);
 
-    toast.success(`${plan.name} Marked Successfully`, {
+    toast.success(`${plan.name}Marks the workout done`, {
       position: "top-right",
       autoClose: 3000,
       hideProgressBar: false,

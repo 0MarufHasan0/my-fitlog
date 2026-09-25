@@ -2,9 +2,12 @@
 "use client";
 
 import { LibraryContext } from "@/context/Context";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import MyPlanCard from "./MyPlanCard";
+
 import Link from "next/link";
+import Sort from "./Sort";
+import { TLibrary } from "@/types/Datatype";
 
 interface ButtonTogglemyplaProps {
   activeTab: "todayplan" | "savelater";
@@ -25,22 +28,54 @@ const ButtonTogglemypla = ({
 
     const setPlans = activeTab === "todayplan"? setTodayPlan : setSaveLater
 
+    // Sort By
+
+    const [sortBy, setSortBy] = useState<"Duration" | "Calories" | "Rating">(
+    "Duration"
+  );
+
+  const sortHandle = (PlanOrSave :TLibrary[] ) => {
+
+    const sortedMyplan = [...PlanOrSave]
+
+    if(sortBy === "Duration"){
+
+      sortedMyplan.sort((a,b) => b.duration - a.duration)
+
+    }
+    else if(sortBy === "Calories"){
+
+      sortedMyplan.sort((a,b) => b.caloriesBurned - a.caloriesBurned)
+
+    } else {
+      sortedMyplan.sort((a,b) => b.rating - a.rating)
+    }
+    
+
+    return sortedMyplan
+
+
+  }
+
+  const sortedMyplan = sortHandle(PlanOrSave) 
+
   return (
     <div>
 
       {/* Tabs */}
-      <div className="mb-8 flex border-b border-base-300">
+      <div className="mb-8 flex justify-between flex-col gap-4 items-center md:flex-row ">
 
-        {/* Today's Plan */}
+       <div className="bg-[#151921] rounded-2xl p-2">
+          {/* Today's Plan */}
         <button
           onClick={() => setActiveTab("todayplan")}
           className={`px-6 py-3 text-base font-semibold ${
             activeTab === "todayplan"
-              ? "border-b-2 border-primary text-primary"
-              : "text-gray-500 hover:text-primary"
+              ? " btn rounded-2xl text-[#CCFF00]"
+              : "text-gray-500 "
           }`}
         >
-          Today's Plan ({todayPlan.length})
+          Today's Plan
         </button>
 
         {/* Save Later */}
@@ -48,17 +83,29 @@ const ButtonTogglemypla = ({
           onClick={() => setActiveTab("savelater")}
           className={`px-6 py-3 text-base font-semibold ${
             activeTab === "savelater"
-              ? "border-b-2 border-primary text-primary"
-              : "text-gray-500 hover:text-primary"
+              ? " btn rounded-2xl text-[#CCFF00]"
+              : "text-gray-500 "
           }`}
         >
-          Save Later ({saveLater.length})
+          Saved
         </button>
+
+
+
+       </div>
+
+        {/* sort */}
+
+        <Sort PlanOrSave={PlanOrSave} 
+        sortBy = {sortBy}
+        setSortBy = {setSortBy}
+        
+        />
 
       </div>
 
       {/* Empty Cards */}
-      {PlanOrSave.length === 0 ? (
+      {sortedMyplan.length === 0 ? (
         <div className="rounded-2xl border border-slate-800 bg-[#111318] px-6 py-12 text-center">
 
           <h1 className="text-2xl font-bold text-white">
@@ -66,7 +113,7 @@ const ButtonTogglemypla = ({
           </h1>
 
           <p className="mt-2 text-sm text-slate-400">
-            Browse the library and add a workout to get started.
+           Browse the library and add a lift to get today moving.
           </p>
 
          <Link href={'/'}>
@@ -80,12 +127,12 @@ const ButtonTogglemypla = ({
       ) : (
         <div className="space-y-4">
 
-          {PlanOrSave.map((plan) => (
+          {sortedMyplan.map((plan) => (
             <MyPlanCard
               key={plan.id}
               plan={plan}
-              PlanOrSave ={PlanOrSave}
               setPlans = {setPlans }
+              sortedMyplan={sortedMyplan }
             />
           ))}
 

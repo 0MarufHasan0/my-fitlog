@@ -6,7 +6,7 @@ import { TLibrary } from '@/types/Datatype';
 const Librar = async() => {
     const getLibaryData = await getData()
     return (
-        <div className='container mx-auto px-4'>
+        <div className='container mx-auto px-4' id='library'>
 
             <h1 className='text-[#FFFFFF] text-4xl'>
                 THE LIBRARY
