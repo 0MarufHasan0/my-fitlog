@@ -2,7 +2,6 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/FitLog-Workout%20Library-ccff00?style=for-the-badge&logo=github&logoColor=111318" alt="FitLog">
-  <img src="https://img.shields.io/badge/Next.js-15+-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js">
   <img src="https://img.shields.io/badge/TypeScript-5+-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
   <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS">
 </p>
