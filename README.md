@@ -1,4 +1,4 @@
-🏋️ FitLog
+# 🏋️ FitLog
 
 <p align="center">
   <img src="https://img.shields.io/badge/FitLog-Workout%20Library-ccff00?style=for-the-badge&logo=github&logoColor=111318" alt="FitLog">
@@ -8,195 +8,187 @@
 </p>
 
 <p align="center">
-  <strong>A modern workout library and planning app for discovering exercises, building a daily workout plan, and tracking your training.</strong>
+  <strong>Train hard. Log honest.</strong>
 </p>
 
 <p align="center">
-  <a href="https://my-fitlog-eosin.vercel.app/">🌐 Live Demo</a>
+  A modern workout library and planning app for discovering exercises,
+  building a daily workout plan, and tracking your training.
 </p>
-
-📸 Project Preview
 
 <p align="center">
-  <img src="./src/assets/dekstop.png" alt="FitLog Desktop Preview" width="100%">
+  <a href="https://my-fitlog-eosin.vercel.app/">
+    🌐 Live Demo
+  </a>
 </p>
 
+---
 
-✨ About The Project
+## 📸 Project Preview
 
-FitLog is a dark-themed workout library and workout planning application built for users who want a simple way to discover exercises and organize their daily training.
+<p align="center">
+  <img
+    src="./src/assets/dekstop.png"
+    alt="FitLog Desktop Preview"
+    width="100%"
+  >
+</p>
 
-Users can browse workout cards, open detailed exercise information, add workouts to Today's Plan, save exercises for later, and track basic workout statistics such as exercise count, duration, and calories.
+---
 
-The project follows a responsive design approach so the interface works across desktop, tablet, and mobile devices.
+## ✨ About The Project
 
-🚀 Live Demo  
+**FitLog** is a dark-themed workout library and workout planning application
+built for users who want a simple way to discover exercises and organize their
+daily training.
 
-<a href="https://my-fitlog-eosin.vercel.app/">🔗 Visit FitLog Live Demo</a>
+Users can browse workout cards, open detailed exercise information, add
+workouts to **Today's Plan**, save exercises for later, and track basic
+workout statistics such as exercise count, duration, and calories.
 
+The project follows a responsive design approach so the interface works across
+**desktop, tablet, and mobile devices**.
 
-🛠️ Technologies Used
+---
 
-Technology
+## 🚀 Live Demo
 
-Purpose
+<p align="center">
+  <a href="https://my-fitlog-eosin.vercel.app/">
+    <strong>🔗 Visit FitLog Live Demo</strong>
+  </a>
+</p>
 
-Next.js
+---
 
-Application framework and UI development
+## 🛠️ Technologies Used
 
-React
+| Technology | Purpose |
+|---|---|
+| **Next.js** | Application framework and UI development |
+| **React** | Building reusable UI components |
+| **TypeScript** | Type-safe development |
+| **Tailwind CSS** | Responsive styling and utility-first CSS |
+| **DaisyUI** | Reusable UI components and styling helpers |
+| **React Toastify** | Toast notifications for user actions |
+| **Lucide React** | Clean and consistent interface icons |
+| **React Loading Skeleton** | Loading placeholders while data is being fetched |
+| **Spinner / Loading UI** | Visual feedback during loading states |
 
-Building reusable UI components
+---
 
-TypeScript
+## ⭐ Key Features
 
-Type-safe development
+### 1. 🏋️ Workout Library
 
-Tailwind CSS
+Browse a collection of workouts displayed in a clean and responsive card
+layout.
 
-Responsive styling and utility-first CSS
+Each workout card includes:
 
-DaisyUI
+- 🖼️ Workout image
+- 🏷️ Muscle group tags
+- 📛 Workout name
+- 🏋️ Equipment information
+- ⏱️ Duration
+- 🔥 Calories
+- ⭐ Rating
 
-Reusable UI components and styling helpers
+---
 
-React Toastify
+### 2. 📖 Workout Details
 
-Toast notifications for user actions
+Open any workout to see complete exercise information, including:
 
-Lucide React
+- Exercise description
+- Muscle groups
+- Equipment
+- Difficulty
+- Sets
+- Reps
+- Duration
+- Calories
+- Rating
+- Step-by-step instructions
 
-Clean and consistent interface icons
+---
 
-React Loading Skeleton
+### 3. 📋 Today's Workout Plan
 
-Loading placeholders while data is being fetched
+Add workouts to **Today's Plan** and manage your daily training list.
 
-Spinner / Loading UI
+The plan displays:
 
-Visual feedback during loading states
+- Total exercises
+- Total minutes
+- Total calories
+- Workout details
+- Remove action
+- Mark as Done action
 
-⭐ Key Features
+---
 
-1. 🏋️ Workout Library
+### 4. 💾 Save For Later
 
-Browse a collection of workouts displayed in a clean responsive card layout with:
+Save workouts that you want to come back to later.
 
-Workout image
+The navigation counter keeps track of saved workouts.
 
-Muscle group tags
+---
 
-Workout name
+### 5. 🔔 Interactive User Feedback
 
-Equipment information
+Important actions provide instant feedback through toast notifications.
 
-Duration
+Examples:
 
-Calories
+- Workout added
+- Workout saved
+- Workout removed
+- Workout completed
 
-Rating
+---
 
-2. 📖 Workout Details
+### 6. 📊 Workout Statistics
 
-Open any workout to see detailed information including:
+The **My Plan** page dynamically displays workout statistics based on the
+exercises currently added to the plan.
 
-Exercise description
+---
 
-Muscle groups
+### 7. 🔄 Loading & Skeleton States
 
-Equipment
+Loading indicators and skeleton placeholders provide a smoother experience
+while workout data is being loaded.
 
-Difficulty
+---
 
-Sets
-
-Reps
-
-Duration
-
-Calories
-
-Rating
-
-Step-by-step instructions
-
-3. 📋 Today's Workout Plan
-
-Add workouts to Today's Plan and manage your daily training list.
-
-The plan also displays:
-
-Total exercises
-
-Total minutes
-
-Total calories
-
-Workout details
-
-Remove action
-
-Mark as Done action
-
-4. 💾 Save For Later
-
-Save workouts that you want to come back to later. The navigation counter keeps track of saved workouts.
-
-5. 🔔 Interactive User Feedback
-
-Important actions provide instant feedback through toast notifications, such as:
-
-Workout added
-
-Workout saved
-
-Workout removed
-
-Workout completed
-
-6. 📊 Workout Statistics
-
-The My Plan page dynamically displays workout statistics based on the exercises currently added to the plan.
-
-7. 🔄 Loading & Skeleton States
-
-Loading indicators and skeleton placeholders provide a smoother experience while workout data is being loaded.
-
-8. 📱 Fully Responsive UI
+### 8. 📱 Fully Responsive UI
 
 The interface is designed to work across:
 
-📱 Mobile
+| Device | Support |
+|---|---|
+| 📱 Mobile | ✅ |
+| 📟 Tablet | ✅ |
+| 💻 Desktop | ✅ |
 
-📟 Tablet
+---
 
-💻 Desktop
+## 🧭 Main Pages
 
-🧭 Main Pages
+| Page | Description |
+|---|---|
+| 🏠 **Home / Workout Library** | Browse available workouts |
+| 💪 **Workout Details** | View complete exercise information |
+| 📋 **My Plan** | Manage today's workout and saved exercises |
+| 🚫 **404 Page** | Handles invalid or unknown routes |
 
-Page
+---
 
-Description
+## 💡 How It Works
 
-Home / Workout Library
-
-Browse available workouts
-
-Workout Details
-
-View complete exercise information
-
-My Plan
-
-Manage today's workout and saved exercises
-
-404 Page
-
-Handles invalid or unknown routes
-
-💡 How It Works
-
+```text
 Browse Workouts
       ↓
 Open Workout Details
@@ -208,108 +200,3 @@ Manage Your Plan
 Track Exercises, Minutes & Calories
       ↓
 Mark Workout as Done
-
-💻 Run The Project Locally
-
-1. Clone the repository
-
-git clone YOUR_GITHUB_REPOSITORY_URL
-
-2. Go to the project folder
-
-cd your-project-folder
-
-3. Install dependencies
-
-npm install
-
-4. Start the development server
-
-npm run dev
-
-5. Open the application
-
-Visit:
-
-http://localhost:3000
-
-📦 Available Scripts
-
-# Start development server
-npm run dev
-
-# Create production build
-npm run build
-
-# Start production server
-npm start
-
-# Run lint
-npm run lint
-
-📁 Suggested Project Structure
-
-fitlog/
-├── public/
-│   └── ...
-├── src/
-│   ├── app/
-│   │   ├── page.tsx
-│   │   ├── my-plan/
-│   │   └── ...
-│   ├── components/
-│   │   └── ...
-│   ├── types/
-│   │   └── ...
-│   └── ...
-├── screenshots/
-│   └── desktop.png
-├── package.json
-├── tsconfig.json
-└── README.md
-
-🎨 Design Highlights
-
-Dark fitness-focused interface
-
-High-contrast neon accent color
-
-Clean workout cards
-
-Responsive grid layout
-
-Clear navigation
-
-Detailed workout information panels
-
-Interactive buttons and toast feedback
-
-Skeleton loading experience
-
-Mobile-friendly responsive layout
-
-🌐 Deployment
-
-The project is deployed with Vercel.
-
-Live Website
-
-https://my-fitlog-eosin.vercel.app/
-
-👨‍💻 Developer
-
-Your Name
-
-GitHub: YOUR_GITHUB_PROFILE
-
-Portfolio: YOUR_PORTFOLIO_URL
-
-Email: YOUR_EMAIL
-
-<p align="center">
-  <strong>💪 Train hard. Log honest.</strong>
-</p>
-
-<p align="center">
-  Built with Next.js, TypeScript & Tailwind CSS.
-</p>
